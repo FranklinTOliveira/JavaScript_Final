@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Friendly Magic 8 Ball</title>
 </head>
 <body>
-    <div class="col-6" id="content">
-        <h1>Magic 8 Ball on Franklin's Website</h1>
-        <p id="info">Ask me what you want to know and click on the Magic 8 Ball.</p>
-        <input type="text" id="question" />
-        <center><h2>Random Image Generator</h2></center>
-        <h4>Click the button to generate and display random images on the webpage.</h4>
-        <!-- call user-defined getRandomImage function after 2 seconds -->
-        <button id="button"> Generate Image </button>
-        <br><br>
-    </div>
-    <span class="col-6" id="imageContainer" align="center"></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="content">
+                <h1>Magic 8 Ball on Franklin's Website</h1>
+                <p id="info">Ask me what you want to know and click on the Magic 8 Ball.</p>
+                <input type="text" id="question" />
+                <center><h2>Random Image Generator</h2></center>
+                <h4>Click the button to generate and display random images on the webpage.</h4>
+                <!-- call user-defined getRandomImage function after 2 seconds -->
+                <button id="button"> Generate Image </button>
+                <br><br>
+            </div>
+            <span class="col-6" id="imageContainer" align="center"></span>
+        </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
