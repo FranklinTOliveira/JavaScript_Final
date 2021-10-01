@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Friendly Magic 8 Ball</title>
 </head>
 <body>
+    <div class="col-6" id="content">
+        <h1>Magic 8 Ball on Franklin's Website</h1>
+        <p id="info">Ask me what you want to know and click on the Magic 8 Ball.</p>
+        <input type="text" id="question" />
+        <center><h2>Random Image Generator</h2></center>
+        <h4>Click the button to generate and display random images on the webpage.</h4>
+        <!-- call user-defined getRandomImage function after 2 seconds -->
+        <button id="button"> Generate Image </button>
+        <br><br>
+    </div>
+    <span class="col-6" id="imageContainer" align="center"></span>
+    <script src="./js/script.js"></script>
 </body>
 </html>
