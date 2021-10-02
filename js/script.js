@@ -54,15 +54,6 @@ function populateBox(specificImage) {
 // returns false when the question is 5 or less characters
 function isValid() {
 
-    let format = /[?]+/;
-
-    if (format.test(string)) {
-        return true;
-    } else {
-        alert("You must ask a question.")
-        return false;
-    }
-
     let question = document.getElementById("question").value;
 
     if (question.length <= 5) {
@@ -73,6 +64,11 @@ function isValid() {
     return true;
 };
 
+function isValid(str) {
+    if (/[?]/g.test(str)) {
+        alert("You must ask a question.");
+        return false;
+    };
 
 // do all this
 function handleClick() {
