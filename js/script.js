@@ -63,6 +63,7 @@ function isValid() {
 
     let Char = "?";
     if ((Char.match(/\W/g)) == "") {
+        alert("You must ask a question.")
         return false;
     };
 
