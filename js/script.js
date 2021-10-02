@@ -53,6 +53,16 @@ function populateBox(specificImage) {
 // returns true when the question is more than 5 characters
 // returns false when the question is 5 or less characters
 function isValid() {
+
+    let format = /[?]+/;
+
+    if (format.test(string)) {
+        return true;
+    } else {
+        alert("You must ask a question.")
+        return false;
+    }
+
     let question = document.getElementById("question").value;
 
     if (question.length <= 5) {
