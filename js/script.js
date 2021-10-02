@@ -61,14 +61,16 @@ function isValid() {
         return false;
     };
 
+    let Char = "?";
+    if ((Char.match(/\W/g)) == "") {
+        return false;
+    };
+
     return true;
 };
 
-function isValid(str) {
-    if (/[?]/g.test(str)) {
-        alert("You must ask a question.");
-        return false;
-    };
+
+
 
 // do all this
 function handleClick() {
