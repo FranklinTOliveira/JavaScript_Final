@@ -61,9 +61,8 @@ function isValid() {
         return false;
     };
 
-    let Char = "?";
-    if ((Char.match(/\W/g)) == "") {
-        alert("You must ask a question.")
+    if (question.search("?") = 0) {
+        alert("You must ask a question -- where's the question mark?");
         return false;
     };
 
