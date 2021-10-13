@@ -57,7 +57,7 @@ function isValid() {
     let question = document.getElementById("question").value;
 
     if (question.length <= 5) {
-        alert("The question may have no less than 5 characters.");
+        alert("The question must have more than 5 characters.");
         return false;
     };
 
