@@ -61,7 +61,7 @@ function isValid() {
         return false;
     };
 
-    if (question.search("?") = 0) {
+    if (question.search("?") == -1) {
         alert("You must ask a question -- where's the question mark?");
         return false;
     };
